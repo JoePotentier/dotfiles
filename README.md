@@ -10,3 +10,8 @@ I'm learning about dotfiles!
 - Finder Show Path Bar
 - Trackpad (Three Finger Drag and Tap to Click)
 - Git (config and SSH)
+
+## Updating Brewfile
+```
+brew bundle dump --force
+```
