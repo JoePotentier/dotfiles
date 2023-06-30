@@ -1,0 +1,13 @@
+tap "homebrew/bundle"
+brew "bat"
+brew "exa"
+brew "git"
+brew "httpie"
+brew "mas"
+cask "alfred"
+cask "dropbox"
+cask "google-chrome"
+cask "google-drive"
+cask "spectacle"
+cask "visual-studio-code"
+mas "Amphetamine", id: 937984704
