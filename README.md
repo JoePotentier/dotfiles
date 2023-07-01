@@ -14,5 +14,12 @@ I'm learning about dotfiles!
 
 ## Updating Brewfile
 ```
-brew bundle dump --force
+brew bundle dump --force --describe
+```
+
+## Updated Homebrew Stuff
+```
+brew update
+brew outdated
+brew upgrade
 ```
