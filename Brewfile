@@ -15,6 +15,8 @@ brew "httpie"
 brew "mas"
 # Node version management
 brew "n"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Application launcher and productivity software
