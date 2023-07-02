@@ -3,6 +3,9 @@ echo 'Hello from .zshrc'
 # Set Variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export NULLCMD=bat
+export NVM_DIR="$HOME/.nvm"
+  [ -s "$HOMEBREW_REPOSITORY/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_REPOSITORY/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "$HOMEBREW_REPOSITORY/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_REPOSITORY/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Change ZSH Options
 
@@ -12,6 +15,7 @@ alias ls='exa'
 alias man='batman'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
+alias rm=trash
 
 
 # Customize Prompt(s)
@@ -21,9 +25,14 @@ PROMPT='
 # Timestamp to the right
 RPROMPT='%*'
 
-# Add Locations to $PATH Variables
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# Add Locations to $path Array
+typeset -U path
+
+path=(
+  $path
+  # Add Visual Studio Code (code)
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+)
 
 # Write Handy Functions
 function mkcd() {
