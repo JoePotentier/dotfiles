@@ -15,10 +15,10 @@ brew "httpie"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
-# Node version management
-brew "n"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
+# Manage multiple Node.js versions
+brew "nvm"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # UNIX shell (command interpreter)
