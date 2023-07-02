@@ -10,6 +10,7 @@ alias exa='exa -laFh --git'
 alias ls='exa'
 alias man='batman'
 alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 
 # Customize Prompt(s)
@@ -27,6 +28,10 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
+
+# function code() {
+#   echo "Can't open ($@) because this function supersedes the original code command."
+# }
 
 # Use ZSH Plugins
 
