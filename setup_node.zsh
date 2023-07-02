@@ -3,7 +3,7 @@
 echo "\n<<< Starting Node Setup >>>\n"
 
 # Node version are managed with `nvm`, which is in the Brewfile.
-# Sett zshrc for NVM_DIR variable.
+# See zshrc for NVM_DIR variable.
 
 # Requires that we source the new nvm install before use
 source $(brew --prefix nvm)/nvm.sh
@@ -19,6 +19,7 @@ fi
 # Install Global NPM Packages
 # npm install --global firebase-tools
 npm install --global trash-cli
+npm install --global yarn
 # ...
 
 echo "Global NPM Packages Installed:"
