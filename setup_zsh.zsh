@@ -6,7 +6,7 @@ echo "\n<<< Starting ZSH Setup >>>\n"
 
 HOMEBREW_ZSH_PATH="$HOMEBREW_REPOSITORY/bin/zsh"
 SHELLS_PATH='/etc/shells'
-if grep -q "$HOMEBREW_ZSH_PATH" "$SHELLS_PATH"; then
+if grep -qFx "$HOMEBREW_ZSH_PATH" "$SHELLS_PATH"; then
   echo "Homebrew zsh, already exists in $SHELLS_PATH, skipping\n"
 else
   echo "Enter superuser (sudo) password to edit $SHELLS_PATH"
