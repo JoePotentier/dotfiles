@@ -21,6 +21,8 @@ brew "n"
 brew "nano"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service
