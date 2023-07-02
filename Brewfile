@@ -11,12 +11,18 @@ brew "exa"
 brew "git"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Pager program similar to more
+brew "less"
 # Mac App Store command-line interface
 brew "mas"
 # Node version management
 brew "n"
+# Free (GNU) replacement for the Pico text editor
+brew "nano"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
 # Client for the Dropbox cloud storage service

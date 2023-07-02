@@ -2,6 +2,7 @@ echo 'Hello from .zshrc'
 
 # Set Variables
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 # Change ZSH Options
 
@@ -9,6 +10,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 alias exa='exa -laFh --git'
 alias ls='exa'
 alias man='batman'
+alias bbd='brew bundle dump --force --describe'
+alias trail='<<<${(F)path}'
 
 
 # Customize Prompt(s)
