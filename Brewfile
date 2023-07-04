@@ -25,8 +25,6 @@ brew "ripgrep"
 brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service

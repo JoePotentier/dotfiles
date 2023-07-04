@@ -7,7 +7,10 @@ if exists brew; then
 else
   echo "brew doesn't exist, continuing with install"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joelt/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
+
 
 
 # Note: Currently you can't do `brew bundle --no-quarantine` as an option.
