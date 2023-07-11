@@ -6,14 +6,27 @@
 
 - link:
     ~/.zshrc:
+      path: zsh/zshrc
+      force: true
     ~/.zshenv:
+      path: zsh/zshenv
+    ~/.p10k.zsh:
+      path: zsh/p10k.zsh
+    ~/.zsh/:
+      create: true
+      glob: true
+      path: zsh/**
+      exclude:
+        - zsh/zshenv
+        - zsh/zshrc
+        - zsh/p10k.zsh
     ~/.gitconfig:
     ~/.config/bat:
       create: true
       path: config/bat
 
-- create:
-    - ~/Work
+# - create:
+#     - ~/Work
 
 - shell:
     - command: ./setup_mac_settings.zsh
