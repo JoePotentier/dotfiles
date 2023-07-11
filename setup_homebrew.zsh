@@ -11,10 +11,7 @@ else
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-
-
 # Note: Currently you can't do `brew bundle --no-quarantine` as an option.
 # It's currently exported in zshrc:
 # export HOMEBREW_CASK_OPTS="--no-quarantine"
 brew bundle --verbose
-

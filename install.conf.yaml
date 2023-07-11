@@ -5,26 +5,26 @@
 - clean: ['~']
 
 - link:
-     ~/.zshrc:
-     ~/.zshenv:
-     ~/.gitconfig:
-     ~/.config/bat:
-       create: true
-       path: config/bat
+    ~/.zshrc:
+    ~/.zshenv:
+    ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/Work
 
 - shell:
-  - 
-    command: ./setup_homebrew.zsh
-    stdout: true
-    stderr: true
-  - 
-    command: ./setup_zsh.zsh
-    stdout: true
-    stderr: true
-  - 
-    command: ./setup_node.zsh
-    stdout: true
-    stderr: true
+    - command: ./setup_mac_settings.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_zsh.zsh
+      stdout: true
+      stderr: true
+    - command: ./setup_node.zsh
+      stdout: true
+      stderr: true
