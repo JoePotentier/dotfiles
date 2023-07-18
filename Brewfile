@@ -35,6 +35,8 @@ brew "tfenv"
 brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # App to build and share containerized applications and microservices
@@ -53,6 +55,8 @@ cask "slack"
 cask "spectacle"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
+cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
@@ -86,6 +90,7 @@ vscode "hashicorp.terraform"
 vscode "hoovercj.vscode-power-mode"
 vscode "IronGeek.vscode-env"
 vscode "iulian-radu-at.find-unused-exports"
+vscode "JayFong.generate-index"
 vscode "kakumei.ts-debug"
 vscode "kuscamara.electron"
 vscode "loiane.ts-extension-pack"
