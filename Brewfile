@@ -7,12 +7,30 @@ brew "awscli"
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
 brew "bat-extras"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Run arbitrary commands when files change
 brew "entr"
 # Modern replacement for 'ls'
 brew "exa"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# GNU awk utility
+brew "gawk"
 # Distributed revision control system
 brew "git"
+# Command-line option parsing utility
+brew "gnu-getopt"
+# C code prettifier
+brew "gnu-indent"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# GNU grep, egrep and fgrep
+brew "grep"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
@@ -21,6 +39,8 @@ brew "jq"
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Move, copy, append, and link multiple files
+brew "mmv"
 # Free (GNU) replacement for the Pico text editor
 brew "nano"
 # Manage multiple Node.js versions
@@ -29,22 +49,34 @@ brew "nvm"
 brew "openjdk"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Terraform version manager inspired by rbenv
 brew "tfenv"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Application launcher and productivity software
 cask "alfred"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
 # App for note taking, organizing, task lists, and archiving
 cask "evernote"
 # Web browser
+cask "firefox"
+# Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
+# CSV editor
+cask "modern-csv"
+# Home media player
+cask "plex"
 # Tool to reverse the direction of scrolling
 cask "scroll-reverser"
 # Team communication and collaboration software
@@ -53,8 +85,12 @@ cask "slack"
 cask "spectacle"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
+cask "steam"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 mas "Amphetamine", id: 937984704
 mas "Termius", id: 1176074088
 vscode "2gua.rainbow-brackets"
@@ -64,6 +100,7 @@ vscode "akamud.vscode-theme-onedark"
 vscode "andys8.jest-snippets"
 vscode "Angular.ng-template"
 vscode "bcanzanella.openmatchingfiles"
+vscode "bradlc.vscode-tailwindcss"
 vscode "brittanychiang.halcyon-vscode"
 vscode "chrisdias.vscode-opennewinstance"
 vscode "christian-kohler.path-intellisense"
@@ -86,6 +123,7 @@ vscode "hashicorp.terraform"
 vscode "hoovercj.vscode-power-mode"
 vscode "IronGeek.vscode-env"
 vscode "iulian-radu-at.find-unused-exports"
+vscode "JayFong.generate-index"
 vscode "kakumei.ts-debug"
 vscode "kuscamara.electron"
 vscode "loiane.ts-extension-pack"
