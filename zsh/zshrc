@@ -34,6 +34,9 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "$HOMEBREW_REPOSITORY/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_REPOSITORY/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 export JAVA_HOME="$HOMEBREW_REPOSITORY/opt/openjdk/bin"
 
+# Build images for linux by default
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 # Change ZSH Options
 
 # Create Alisases (Use 'command' to bypass alias)
@@ -60,6 +63,7 @@ path=(
   $path
   # Add Visual Studio Code (code)
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+  "/Users/joelt/.local/bin"
 )
 
 # Write Handy Functions
@@ -105,3 +109,7 @@ source "$ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 # ...and Other Surprises
 
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

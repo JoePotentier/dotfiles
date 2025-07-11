@@ -5,3 +5,7 @@
 	autoSetupRemote = true
 [submodule]
 	recurse = false
+[includeIf "gitdir:~/Documents/@ghost/"]
+  path = .gitconfig-btcw
+[nostr]
+	relays = wss://relay.damus.io wss://nos.lol

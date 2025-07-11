@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+tap "ngrok/ngrok"
 # Securely store and access AWS credentials in development environments
 brew "aws-vault"
 # Official Amazon AWS command-line interface
@@ -33,12 +34,16 @@ brew "gnutls"
 brew "grep"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Pager program similar to more
 brew "less"
 # Mac App Store command-line interface
 brew "mas"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Move, copy, append, and link multiple files
 brew "mmv"
 # Free (GNU) replacement for the Pico text editor
@@ -51,8 +56,20 @@ brew "openjdk"
 brew "ripgrep"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
+# Formatting tool for reformatting Swift code
+brew "swiftformat"
+# User interface to the TELNET protocol
+brew "telnet"
 # Terraform version manager inspired by rbenv
 brew "tfenv"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# Build server protocol implementation for integrating Xcode with sourcekit-lsp
+brew "xcode-build-server"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Application launcher and productivity software
@@ -63,9 +80,9 @@ cask "balenaetcher"
 cask "dbeaver-community"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
-# App for note taking, organizing, task lists, and archiving
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# App for note taking, organising, task lists, and archiving
 cask "evernote"
 # Web browser
 cask "firefox"
@@ -75,6 +92,8 @@ cask "google-chrome"
 cask "google-drive"
 # CSV editor
 cask "modern-csv"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Home media player
 cask "plex"
 # Tool to reverse the direction of scrolling
@@ -91,66 +110,76 @@ cask "steam"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-mas "Amphetamine", id: 937984704
-mas "Termius", id: 1176074088
-vscode "2gua.rainbow-brackets"
 vscode "aaron-bond.better-comments"
-vscode "AdamCaviness.theme-monokai-dark-soda"
+vscode "adamcaviness.theme-monokai-dark-soda"
 vscode "akamud.vscode-theme-onedark"
 vscode "andys8.jest-snippets"
-vscode "Angular.ng-template"
+vscode "angular.ng-template"
 vscode "bcanzanella.openmatchingfiles"
 vscode "bradlc.vscode-tailwindcss"
 vscode "brittanychiang.halcyon-vscode"
 vscode "chrisdias.vscode-opennewinstance"
+vscode "christian-kohler.npm-intellisense"
 vscode "christian-kohler.path-intellisense"
-vscode "CircleCI.circleci"
+vscode "circleci.circleci"
+vscode "csstools.postcss"
 vscode "dahong.theme-bear"
-vscode "DanielSanMedium.dscodegpt"
+vscode "danielsanmedium.dscodegpt"
 vscode "dbaeumer.vscode-eslint"
-vscode "dcortes92.FreeMarker"
-vscode "DigitalBrainstem.javascript-ejs-support"
+vscode "dcortes92.freemarker"
+vscode "digitalbrainstem.javascript-ejs-support"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
+vscode "exodiusstudios.comment-anchors"
 vscode "firsttris.vscode-jest-runner"
 vscode "formulahendry.auto-rename-tag"
+vscode "geriyoco.vscode-image-gallery"
 vscode "ginfuru.ginfuru-better-solarized-dark-theme"
-vscode "GitHub.github-vscode-theme"
-vscode "GregorBiswanger.json2ts"
-vscode "HallerPatrick.solarized-autumn"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.github-vscode-theme"
+vscode "gregorbiswanger.json2ts"
+vscode "hallerpatrick.solarized-autumn"
 vscode "hangxingliu.vscode-systemd-support"
 vscode "hashicorp.terraform"
 vscode "hoovercj.vscode-power-mode"
-vscode "IronGeek.vscode-env"
+vscode "irongeek.vscode-env"
 vscode "iulian-radu-at.find-unused-exports"
-vscode "JayFong.generate-index"
+vscode "jayfong.generate-index"
 vscode "kakumei.ts-debug"
+vscode "kisstkondoros.vscode-gutter-preview"
 vscode "kuscamara.electron"
 vscode "loiane.ts-extension-pack"
 vscode "loilo.snazzy-light"
 vscode "luqimin.tiny-light"
 vscode "mhutchie.git-graph"
 vscode "monokai.theme-monokai-pro-vscode"
+vscode "ms-python.debugpy"
 vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
 vscode "ms-vscode.vscode-typescript-tslint-plugin"
 vscode "naumovs.color-highlight"
-vscode "nrwl.angular-console"
-vscode "Orta.vscode-jest"
-vscode "PKief.material-icon-theme"
+vscode "orta.vscode-jest"
+vscode "pkief.material-icon-theme"
 vscode "pmneo.tsimporter"
 vscode "raeesa.monokai-light"
+vscode "redhat.vscode-xml"
 vscode "repeale.material-monokai"
-vscode "ritwickdey.LiveServer"
+vscode "ritwickdey.liveserver"
 vscode "sburg.vscode-javascript-booster"
 vscode "shd101wyy.markdown-preview-enhanced"
-vscode "SonarSource.sonarlint-vscode"
+vscode "sonarsource.sonarlint-vscode"
 vscode "streetsidesoftware.code-spell-checker"
 vscode "stringham.move-ts"
 vscode "svelte.svelte-vscode"
 vscode "tal7aouy.theme"
+vscode "tomwhite007.rename-angular-component"
 vscode "tootone.org-mode"
+vscode "tyriar.luna-paint"
+vscode "unifiedjs.vscode-mdx"
 vscode "vscode-icons-team.vscode-icons"
+vscode "wayou.vscode-todo-highlight"
 vscode "william-voyek.vscode-nginx"
 vscode "wix.vscode-import-cost"
 vscode "yoavbls.pretty-ts-errors"
-vscode "Zignd.html-css-class-completion"
+vscode "zignd.html-css-class-completion"
