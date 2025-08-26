@@ -37,8 +37,8 @@ export JAVA_HOME="$HOMEBREW_REPOSITORY/opt/openjdk/bin"
 # Change ZSH Options
 
 # Create Alisases (Use 'command' to bypass alias)
-alias exa='exa -laFh --git'
-alias ls='exa'
+alias eza='eza -laFh --git'
+alias ls='eza'
 alias man='batman'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'

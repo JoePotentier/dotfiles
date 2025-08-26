@@ -20,7 +20,7 @@ else
   chsh -s "$HOMEBREW_ZSH_PATH"
 fi
 
-if exa /private/var/select/sh | grep -q zsh ; then
+if eza /private/var/select/sh | grep -q zsh ; then
   echo "Command sh already symlinked to zsh, skipping\n"
 else 
   echo "Enter superuser (sudo) password to symlink sh to zsh"
